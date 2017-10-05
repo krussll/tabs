@@ -7,3 +7,8 @@ nav-background: #B40604
 nav-font: #fff
 jumbotron-background: #ECEEEF
 jumbotron-font: #fff
+
+collections:
+  tabs:
+    output: true
+    permalink: /:collection/:path/:name
