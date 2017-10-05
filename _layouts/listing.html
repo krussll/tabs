@@ -11,7 +11,7 @@
       {% for p in site.tabs %}
          {% if p.location == page.quick_url %}
             <li class="nav-item">
-              <a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a>
+              <a href="{{ site.url }}{% if p.quick_url == blank %}{{ p.url }}{% elseif %}{{ p.quick_url }}{% endif %}">{{ p.title }}</a>
             </li>
         {% endif %}
       {% endfor %}
