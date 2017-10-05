@@ -8,6 +8,7 @@
     <div class="navbar-nav-scroll" id="bd-main-nav">
       <ul class="navbar-nav bd-navbar-nav flex-row">
       {% for p in site.tabs %}
+        {{p.location }}{{ p.title }}
          {% if p.location == "nav" %}
             <li class="nav-item">
               <a class="nav-link" href="{{ site.url }}/{{ p.quick_url }}">{{ p.title }}</a>
