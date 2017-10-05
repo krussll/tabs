@@ -1,7 +1,6 @@
 ---
 layout: listing
-title: A
+title: UKULELE TABS, CHORDS : A
 location: nav
 quick_url: a
-colour: black
 ---
