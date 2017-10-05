@@ -1,6 +1,6 @@
 ---
 layout: listing
-title: E
+title: Elvis Presley
 location: e
 quick_url: e/elvis_presley
 colour: black
