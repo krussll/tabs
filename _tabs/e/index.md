@@ -1,6 +1,6 @@
 ---
 layout: listing
-title: E
+title: UKULELE TABS, CHORDS : E
 location: nav
 quick_url: e
 ---
