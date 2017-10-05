@@ -21,7 +21,7 @@
 
     {% for page in site.[name] %}
     <article>
-      <h2>{{ page.title }}</h2>
+      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
       <p><a href="{{ page.url }}">{{ page.content | markdownify }}</a></p>
     </article>
     {% endfor %}
