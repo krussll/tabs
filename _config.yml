@@ -11,4 +11,4 @@ jumbotron-font: #fff
 collections:
   tabs:
     output: true
-    permalink: /:collection/:path/:name
+    permalink: pretty
