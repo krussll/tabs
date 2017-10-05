@@ -12,7 +12,23 @@
     </div>
     
     <div class="container my-5">
-      {{ content }}
+      {% for collection in site.collections %}
+
+  {% assign name = collection.label %}
+
+  <section>
+    <h1>{{ name }}</h1>
+
+    {% for page in site.[name] %}
+    <article>
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.content | markdownify }}</p>
+    </article>
+    {% endfor %}
+    
+  </section>
+
+{% endfor %}
     </div>
 
   {% include footer.html %}
