@@ -1,6 +1,6 @@
 ---
 layout: listing
-title: Elvis Presley
+title: Elvis Presley Ukulele Tabs
 location: e
 quick_url: e/elvis_presley
 ---
