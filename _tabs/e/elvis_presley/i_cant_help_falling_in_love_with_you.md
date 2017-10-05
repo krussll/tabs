@@ -1,7 +1,6 @@
 ---
-layout: listing
+layout: tab
 artist: Elvis Presley
 title: I Can't Help Falling In Love
 location: e/elvis_presley
-colour: black
 ---
