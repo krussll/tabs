@@ -5,18 +5,6 @@
     {% include nav.html %}
     
   <div class="container my-5">
-    {{ page.title }}
-    
-    <ul>
-      {% for p in site.tabs %}
-         {% if p.location == page.quick_url %}
-            <li class="nav-item">
-              <a href="{{ site.url }}{% if p.quick_url %}/{{ p.quick_url }}{% else %}{{ p.url }}{% endif %}">{{ p.title }}</a>
-            </li>
-        {% endif %}
-      {% endfor %}
-        
-      </ul>
   </div>
   
   {% include footer.html %}
