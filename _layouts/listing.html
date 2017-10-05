@@ -9,10 +9,7 @@
     
     <ul>
       {% for p in site.tabs %}
-            <li class="nav-item">
-              {{ p.location }}{{ page.quick_link }}
-            </li>
-         {% if p.location == page.quick_link | downcase %}
+         {% if p.location == page.quick_url %}
             <li class="nav-item">
               <a href="{{ site.url }}{{ p.quick_url }}">{{ p.title }}</a>
             </li>
