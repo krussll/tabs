@@ -5,7 +5,18 @@
     {% include nav.html %}
     
   <div class="container my-5">
-    {{ content }}
+    {{ page.title }}
+    
+    <ul>
+      {% for p in site.tabs %}
+         {% if p.location == page.title | downcase %}
+            <li class="nav-item">
+              <a href="{{ site.url }}{{ p.quick_url }}">{{ p.title }}</a>
+            </li>
+        {% endif %}
+      {% endfor %}
+        
+      </ul>
   </div>
   
   {% include footer.html %}
