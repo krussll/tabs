@@ -12,23 +12,6 @@
     </div>
     
     <div class="container my-5">
-      {% for collection in site.collections %}
-
-  {% assign name = collection.label %}
-
-  <section>
-    <h1>{{ name }}</h1>
-
-    {% for page in site.[name] %}
-    <article>
-      <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-      <p><a href="{{ page.url }}">{{ page.content | markdownify }}</a></p>
-    </article>
-    {% endfor %}
-    
-  </section>
-
-{% endfor %}
     </div>
 
   {% include footer.html %}
