@@ -1,6 +1,6 @@
 ---
 layout: listing
 title: Randy Newman Ukulele Tabs
-location: e
+location: r
 quick_url: r/randy_newman
 ---
