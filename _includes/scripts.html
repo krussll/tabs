@@ -1,5 +1,19 @@
 <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
+<script>
+  window.store = {
+    {% for p in site.tabs %}
+         {% if p.layout == "tab" %}
+            "{{ p.url | slugify }}": {
+              "artist": "{{ p.artist | xml_escape }}",
+              "author": "{{ p.author | xml_escape }}",
+              "url": "{{ p.url | xml_escape }}"
+            }
+          {% endif %}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+</script>
 
 {% if site.google_analytics %}
   <script>
