@@ -35,7 +35,7 @@ function displaySearchResults(results, store) {
 
   if (results.length) { // Are there any results?
     var appendString = '';
-
+console.log(results);
     for (var i = 0; i < results.length; i++) {  // Iterate over the results
       var item = results[i];
       appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
@@ -53,7 +53,7 @@ function displaySearchResults(results, store) {
 
     if (results.length) { // Are there any results?
       var appendString = '';
-
+console.log(results);
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = results[i];
         appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
