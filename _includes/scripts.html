@@ -9,8 +9,8 @@
               "author": "{{ p.author | xml_escape }}",
               "url": "{{ p.url | xml_escape }}"
             }
-          {% endif %}
-      {% unless forloop.last %},{% endunless %}
+          {% unless forloop.last %},{% endunless %}
+        {% endif %}
     {% endfor %}
   };
 </script>
