@@ -37,7 +37,7 @@ function displaySearchResults(results, store) {
     var appendString = '';
 
     for (var i = 0; i < results.length; i++) {  // Iterate over the results
-      var item = store[results[i].ref];
+      var item = results[i];
       appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
     }
 
