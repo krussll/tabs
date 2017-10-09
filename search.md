@@ -5,7 +5,7 @@ layout: default
 
 # Search
 
-
+<ul id="search-results"></ul>
 
 <script>
   window.store = {
