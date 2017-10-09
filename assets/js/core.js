@@ -21,7 +21,9 @@ if (searchTerm) {
     this.field('title');
     this.field('artist');
     
-    this.add(window.store);
+    window.store.forEach(function (doc) {
+      this.add(doc)
+    }, this);
   });
   
   var results = idx.search(searchTerm); // Get lunr to perform a search
