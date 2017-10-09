@@ -11,7 +11,7 @@ layout: default
   window.store = [
     {% for p in site.tabs %}
          {% if p.layout == "tab" %}
-            "{{ p.url | slugify }}":{"artist": "{{ p.artist | xml_escape }}","title": "{{ p.title | xml_escape }}","url": "{{ p.url | xml_escape }}"}{% unless forloop.last %},{% endunless %}
+            {"artist": "{{ p.artist | xml_escape }}","title": "{{ p.title | xml_escape }}","url": "{{ p.url | xml_escape }}"}{% unless forloop.last %},{% endunless %}
         {% endif %}
     {% endfor %}
   ];
