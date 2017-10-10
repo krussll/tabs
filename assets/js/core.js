@@ -10,7 +10,7 @@ console.log(results);
              return item.url == results[i].ref
           });
         
-        appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
+        appendString += '<li><a href="/tabs' + item.url + '"><h3>' + item.artist + ' - ' + item.title + '</h3></a>';
       }
 
       searchResults.innerHTML = appendString;
