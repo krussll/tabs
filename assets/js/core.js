@@ -38,6 +38,7 @@ console.log(results);
         this.ref('id');
         this.field('title');
         this.field('artist');
+        this.field('url');
 
         window.store.forEach(function (doc) {
           this.add(doc)
