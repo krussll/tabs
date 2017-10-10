@@ -5,10 +5,18 @@
     {% include nav.html %}
     
   <div class="container my-5">
-    {{ content }}
+    <h1>Search Results</h1>
+    <ul id="search-results"></ul>
   </div>
   
   {% include footer.html %}
   {% include scripts.html %}
+    
+    <script>
+      window.store = [{% for p in site.tabs %}{% if p.layout == "tab" %}{"artist": "{{ p.artist | xml_escape }}","title": "{{ p.title | xml_escape }}","url": "{{ p.url | xml_escape }}"}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}];
+    </script>
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="{{ site.url }}/assets/js/core.js"></script>
   </body>
 </html>
