@@ -6,7 +6,10 @@
       var appendString = '';
 console.log(results);
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
-        var item = results[i];
+        var item = store.find(item => {
+             return item.url == results[i].ref
+          });
+        
         appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
       }
 
