@@ -1,12 +1,12 @@
 (function() {
-  function displaySearchResults(results, store) {
+  function displaySearchResults(results, title) {
     var searchResults = document.getElementById('search-results');
 
     if (results.length) { // Are there any results?
       var appendString = '';
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
-        var item = store.find(item => {
+        var item = title.find(item => {
              return item.url == results[i].ref
           });
         
@@ -41,12 +41,12 @@
         this.ref('url');
         this.field('title');
 
-        window.store.forEach(function (doc) {
+        window.title.forEach(function (doc) {
           this.add(doc)
         }, this);
       });
     
      var results = idx.search(searchTerm); // Get lunr to perform a search
-     displaySearchResults(results, window.store); // We'll write this in the next section
+     displaySearchResults(results, window.title); // We'll write this in the next section
   }
 })();
