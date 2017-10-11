@@ -25,7 +25,13 @@ $jumbotron-font: #FFF;
 }
 
 nav form input.form-control {
-  margin: .5em 1em;
+  margin: .5em 0em;
+}
+
+nav form button {
+  background:none; 
+  border:none;
+  padding:0;
 }
 
 .navbar-nav .nav-item .nav-link {
