@@ -4,7 +4,7 @@
 
     if (results.length) { // Are there any results?
       var appendString = '';
-console.log(results);
+
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store.find(item => {
              return item.url == results[i].ref
@@ -40,7 +40,6 @@ console.log(results);
     var idx = lunr(function () {
         this.ref('url');
         this.field('title');
-        this.field('artist');
 
         window.store.forEach(function (doc) {
           this.add(doc)
