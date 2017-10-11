@@ -28,6 +28,11 @@ nav form input.form-control {
   margin: .5em 0em;
 }
 
+nav form button > i {
+    margin-left: -40px;
+    margin-top: 6px;
+}
+
 nav form button {
   background:none; 
   border:none;
