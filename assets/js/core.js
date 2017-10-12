@@ -40,6 +40,8 @@
     var idx = lunr(function () {
         this.ref('url');
         this.field('title');
+        this.field('artist');
+
 
         window.title.forEach(function (doc) {
           this.add(doc)
