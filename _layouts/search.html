@@ -14,7 +14,7 @@
     
     <script>
       window.artist = [{% for p in site.tabs %}{% if p.layout == "artist" %}{"artist": "{{ p.artist | xml_escape }}","url": "{{ p.url | xml_escape }}"}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}];
-      window.title = [{% for p in site.tabs %}{% if p.layout == "tab" %}{"artist": "{{ p.artist | xml_escape }}","title": "{{ p.title | xml_escape }}","url": "{{ p.url | xml_escape }}"}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}];
+      window.title = [{% for p in site.tabs %}{% if p.layout == "tab" %}{"artist": "{{ p.artist | xml_escape }}","location": "{{ p.location | xml_escape }}","title": "{{ p.title | xml_escape }}","url": "{{ p.url | xml_escape }}"}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}];
     </script>
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
