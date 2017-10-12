@@ -10,7 +10,7 @@
              return item.url == results[i].ref
           });
         
-        appendString += '<div class="card"><p><a href="/tabs' + item.url + '">' + item.title + '</a><br /><a href="/tabs/' + item.location + '">' + item.artist + '</a></p></div>';
+        appendString += '<div class="card"><span class="align-middle"><a href="/tabs' + item.url + '">' + item.title + '</a><br /><a href="/tabs/' + item.location + '">' + item.artist + '</a></span></div>';
       }
 
       searchResults.innerHTML = appendString;
