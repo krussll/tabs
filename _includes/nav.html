@@ -5,18 +5,6 @@
       {{ site.name }}
     </a>
     
-    <div class="navbar-nav-scroll" id="bd-main-nav">
-      <ul class="navbar-nav bd-navbar-nav flex-row d-none d-md-flex">
-      {% for p in site.tabs %}
-         {% if p.location == "nav" %}
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.url }}/{{ p.quick_url }}">{{ p.quick_url }}</a>
-            </li>
-        {% endif %}
-      {% endfor %}        
-      </ul>
-    </div>
-    
     <form action="{{ site.url }}/search" method="get" class="form-inline">
       <div class="form-group">
         <input type="text" name="query" class="form-control" id="search" aria-describedby="emailHelp" placeholder="Enter song/artist">
