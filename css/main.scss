@@ -77,9 +77,11 @@ div.card {
 }
 
 ul.list {
-  list-style: none;
+    padding: 0;
+    list-style-type: none;
 }
 
 ul.list a {
   color: #545454;
+  text-decoration: underline;
 }
