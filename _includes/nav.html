@@ -4,14 +4,15 @@
     <a class="navbar-brand" href="{{ site.url }}">
       {{ site.name }}
     </a>
-    
-    <form action="{{ site.url }}/search" method="get" class="form-inline">
-      <div class="form-group">
-        <input type="text" name="query" class="form-control" id="search" aria-describedby="emailHelp" placeholder="Enter song/artist">
-      </div>
-      
-      <button type="submit"><i class="material-icons mb-3 mb-md-0 mt-md-2">search</i></button>
-    </form>
+    <div>
+      <form action="{{ site.url }}/search" method="get" class="form-inline">
+        <div class="form-group">
+          <input type="text" name="query" class="form-control" id="search" aria-describedby="emailHelp" placeholder="Enter song/artist">
+        </div>
+
+        <button type="submit"><i class="material-icons mb-3 mb-md-0 mt-md-2">search</i></button>
+      </form>
+    </div>
   </nav>
 </header>
 
