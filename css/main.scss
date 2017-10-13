@@ -11,6 +11,11 @@ $jumbotron-font: #FFF;
   display: inline-block;
 }
 
+footer {
+  background: #212020;
+  color: #fff;
+}
+
 .bd-navbar {
   min-height: 4rem;
   background-color: $nav-background;
@@ -87,6 +92,5 @@ ul.list a {
 }
 
 a.list-letter {
-  color: $nav-font;
   text-decoration: none;
 }
