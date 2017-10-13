@@ -1,5 +1,19 @@
 <footer class="bd-footer">
   <div class="container">
-    <p><small>Copyright 2017</small></p>
+      <div>
+    <ul class="list-inline">
+      {% for p in site.tabs %}
+         {% if p.location == "nav" %}
+            <li class="list-inline-item">
+              <a href="{{ site.url }}/{{ p.quick_url }}">{{ p.quick_url }}</a>
+            </li>
+        {% endif %}
+      {% endfor %}        
+      </ul>
+    </div>
+  
+    <div>
+      <p><small>Copyright 2017</small></p>
+    </div>
   </div>
 </footer>
