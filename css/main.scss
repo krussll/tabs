@@ -43,7 +43,7 @@ nav form input.form-control {
 }
 
 nav form button > i {
-    margin-left: -40px;
+    margin-left: -80px;
 }
 
 nav div {
@@ -53,7 +53,7 @@ nav div {
 }
 
 nav div .form-group, nav div .form-group input {
-  width: 100%;  
+  width: 100% !important;  
 }
 
 nav form button {
