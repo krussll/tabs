@@ -4,7 +4,7 @@
 $nav-background: #fff;
 $nav-font: #24292e;
 
-$jumbotron-background: #ECEEEF;
+$jumbotron-background: #9FBFAA;
 $jumbotron-font: #FFF;
 
 #bd-main-nav {
@@ -16,7 +16,7 @@ footer {
   padding-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
-  background: #9FBFAA;
+  background: #242729;
   color: #fff;
   bottom: 0;
 }
@@ -83,6 +83,8 @@ nav form button {
 
 .jumbotron {
   border-radius: 0rem;
+  background: $jumbotron-background;
+  color: $jumbotron-font;
 }
 
 .jumbotron.image {
