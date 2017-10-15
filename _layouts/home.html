@@ -6,12 +6,31 @@
     <div class="jumbotron">
       <div class="container text-center">
         <h1>{{ page.title }}</h1>
-        <p class="lead">{{ page.sub-title }}</p>
-        <p><a class="btn btn-lg btn-success" href="{{ site.url }}{{ page.action-location }}" role="button">{{ page.action-text }}</a></p>
+        <form action="{{ site.url }}/search" method="get" class="form-inline">
+          <div class="form-group">
+            <input type="text" name="query" class="form-control" id="homeSearch">
+          </div>
+
+          <button type="submit" class="btn btn-lg btn-success">Find Tabs</button>
+        </form>
       </div>
     </div>
     
     <div class="container my-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Quality</h2>
+          <p>We gather tabs from around the web, ensuring we have the best version for you.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Beauty</h2>
+          <p>We want to make tabs #lookGreatAgain. Lets end ugly chord books and get back to how tabs are supposed to look</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Clarity</h2>
+          <p>We will never clutter our pages, just the best looking tabs.</p>
+        </div>
+      </div>
     </div>
 
   {% include footer.html %}
