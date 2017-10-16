@@ -5,7 +5,7 @@
       {% for p in site.tabs %}
          {% if p.location == "nav" %}
             <li class="list-inline-item">
-              <a class="list-letter" href="{{ site.url }}/{{ p.quick_url }}">{{ p.quick_url }}</a>
+              <a class="list-letter" href="/{{ p.quick_url }}">{{ p.quick_url }}</a>
             </li>
         {% endif %}
       {% endfor %}        
